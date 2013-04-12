@@ -1,4 +1,4 @@
-    			<ul>
+    			<ul class="nav">
 					<li>
 						<a href="homes_for_sale">Homes For Sale</a>
 						<div class="wrap">

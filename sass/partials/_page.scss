@@ -92,12 +92,18 @@ header {
     color: $brown;
     font-family: 'QuattrocentoRomanRegular', 'Georgia', serif;
     text-shadow: 0 0.1em white;
-    display: -webkit-flex;
-    -webkit-justify-content: space-between;
-    display: -moz-flex;
-    -moz-justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
+    padding: 1em 0;
+    .wrap {
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        -webkit-align-items: center;
+        display: -moz-flex;
+        -moz-justify-content: space-between;
+        -moz-align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     h1 {
         margin-bottom: -1em;
         .first-name {
@@ -116,9 +122,15 @@ header {
         top: 0.20em;
     }
     address {
+        p {
+            margin: 0;
+        }
         p:first-child {
             text-transform: uppercase;
             font-style: normal;
+        }
+        p:last-child {
+            font-size: 0.8em;
         }
         a {
             color: $yellow;
@@ -126,7 +138,7 @@ header {
     }    
 }
     nav.menu {
-        >ul {
+        ul.nav {
             display: -webkit-flex;
             -webkit-justify-content: space-between;
             display: -moz-flex;
@@ -190,14 +202,7 @@ img.featured, img.map {
 }
 
 .threemusketeers {
-    display: flex;
-    display: -webkit-flex;
-    display: -moz-flex;
     margin: 4em 0;
-    >* {
-        display: block;
-        width: 100%;
-    }
 }
 
 #main {}
@@ -208,7 +213,7 @@ footer {
     padding: 4em 0;
     color: white;
     text-shadow: 0 -0.1em rgba(0,0,0,0.5);
-    >div>ul {
+    ul.nav {
         display: -webkit-flex;
         -webkit-justify-content: space-between;
         display: -moz-flex;
@@ -219,6 +224,10 @@ footer {
         margin: 0;
         >li {
             display: block;
+            >a {
+                font-family: 'QuattrocentoRomanRegular', 'Georgia', serif;
+                color: lighten($desblue, 30%);
+            }
             ul {
                 margin: 2em 0 2em 0;
                 padding: 0;

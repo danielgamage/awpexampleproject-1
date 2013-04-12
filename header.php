@@ -14,39 +14,44 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-    	<div class="wrap">
 	    	<nav id="top">
-	    		<ul>
-	    			<a href="facebook">
-	    				<li>Facebook</li>
-	    			</a>
-	    			<a href="twitter">
-	    				<li>Twitter</li>
-	    			</a>
-	    			<a href="realty_usa">
-	    				<li>Realty USA</li>
-	    			</a>
-	    			<a href="blog">
-	    				<li>Blog</li>
-	    			</a>
-	    			<a href="contact">
-	    				<li>Contact</li>
-	    			</a>
-	    			<a href="client-login">
-	    				<li>Client Login</li>
-	    			</a>
-	    		</ul>
+		    	<div class="wrap"> <!-- ugh wrappers WHY !-->
+		    		<ul>
+		    			<a href="facebook">
+		    				<li>Facebook</li>
+		    			</a>
+		    			<a href="twitter">
+		    				<li>Twitter</li>
+		    			</a>
+		    			<a href="realty_usa">
+		    				<li>Realty USA</li>
+		    			</a>
+		    			<a href="blog">
+		    				<li>Blog</li>
+		    			</a>
+		    			<a href="contact">
+		    				<li>Contact</li>
+		    			</a>
+		    			<a href="client-login">
+		    				<li>Client Login</li>
+		    			</a>
+		    		</ul>
+		    	</div>
 	    	</nav>
 	    	<header>
-	    		<a href="/">
-	    			<h1><span class="first-name">Margaret</span> Hobbie</h1>
-	    			<h3>Ithaca, NY Realtor <span class="flourish">&</span> Historian</h3>
-	    		</a>
-	    		<address>
-	    			<p>Call me today at <a href="tel:+16072205334">(607) 220-5334</a></p>
-	    			<p>Licensed Associate Real Estate Broker, Audrey Edelman Realty USA</p>
-	    		</address>
+	    		<div class="wrap">
+		    		<a href="/">
+		    			<h1><span class="first-name">Margaret</span> Hobbie</h1>
+		    			<h3>Ithaca, NY Realtor <span class="flourish">&</span> Historian</h3>
+		    		</a>
+		    		<address>
+		    			<p>Call me today at <a href="tel:+16072205334">(607) 220-5334</a></p>
+		    			<p>Licensed Associate Real Estate Broker, Audrey Edelman Realty USA</p>
+		    		</address>
+		    	</div>
 	    	</header>
 			<nav class="menu" role="navigation">
-				<?php include "nav.php" ?> <!--because why write anything twice?!-->
+				<div class="wrap">
+					<?php include "nav.php" ?> <!--because why write anything twice?!-->
+				</div>
 			</nav>

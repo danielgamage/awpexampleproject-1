@@ -562,12 +562,17 @@ header {
   color: #473726;
   font-family: "QuattrocentoRomanRegular", "Georgia", serif;
   text-shadow: 0 0.1em white;
-  display: -webkit-flex;
-  -webkit-justify-content: space-between;
-  display: -moz-flex;
-  -moz-justify-content: space-between;
-  display: flex;
-  justify-content: space-between; }
+  padding: 1em 0; }
+  header .wrap {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display: -moz-flex;
+    -moz-justify-content: space-between;
+    -moz-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   header h1 {
     margin-bottom: -1em; }
     header h1 .first-name {
@@ -581,13 +586,17 @@ header {
     font-size: 1.5em;
     position: relative;
     top: 0.20em; }
+  header address p {
+    margin: 0; }
   header address p:first-child {
     text-transform: uppercase;
     font-style: normal; }
+  header address p:last-child {
+    font-size: 0.8em; }
   header address a {
     color: #c4902a; }
 
-nav.menu > ul {
+nav.menu ul.nav {
   display: -webkit-flex;
   -webkit-justify-content: space-between;
   display: -moz-flex;
@@ -596,18 +605,18 @@ nav.menu > ul {
   justify-content: space-between;
   padding: 0;
   margin: 0; }
-  nav.menu > ul > li {
+  nav.menu ul.nav > li {
     display: inline-block;
     text-align: center; }
-    nav.menu > ul > li:not(:last-child):after {
+    nav.menu ul.nav > li:not(:last-child):after {
       content: '\274B';
       display: inline-block; }
-    nav.menu > ul > li ul {
+    nav.menu ul.nav > li ul {
       padding: 1em 2em;
       background-image: linear-gradient(to bottom, white, #eeeeee 20%, white);
       border-left: #c4902a 1px solid;
       border-right: #c4902a 1px solid; }
-      nav.menu > ul > li ul:before {
+      nav.menu ul.nav > li ul:before {
         content: '';
         display: inline-block;
         height: 100%; }
@@ -638,13 +647,7 @@ img.featured, img.map {
       top: -5em; }
 
 .threemusketeers {
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
   margin: 4em 0; }
-  .threemusketeers > * {
-    display: block;
-    width: 100%; }
 
 footer {
   background-image: linear-gradient(to bottom, #3a757e, #4a96a1 10%, #4a96a1);
@@ -652,7 +655,7 @@ footer {
   padding: 4em 0;
   color: white;
   text-shadow: 0 -0.1em rgba(0, 0, 0, 0.5); }
-  footer > div > ul {
+  footer ul.nav {
     display: -webkit-flex;
     -webkit-justify-content: space-between;
     display: -moz-flex;
@@ -661,12 +664,15 @@ footer {
     justify-content: space-between;
     padding: 0;
     margin: 0; }
-    footer > div > ul > li {
+    footer ul.nav > li {
       display: block; }
-      footer > div > ul > li ul {
+      footer ul.nav > li > a {
+        font-family: "QuattrocentoRomanRegular", "Georgia", serif;
+        color: #abd3d9; }
+      footer ul.nav > li ul {
         margin: 2em 0 2em 0;
         padding: 0; }
-        footer > div > ul > li ul li {
+        footer ul.nav > li ul li {
           display: block; }
   footer .bottom .wrap {
     display: -webkit-flex;
@@ -678,19 +684,19 @@ footer {
 
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-  .threemusketeers {
+  .threemusketeers > .wrap {
     display: -webkit-flex;
     -webkit-justify-content: space-between;
     display: -moz-flex;
     -moz-justify-content: space-between;
     display: flex;
     justify-content: space-between; }
-    .threemusketeers > * {
+    .threemusketeers > .wrap > * {
       display: block;
       width: 33%; }
-      .threemusketeers > *:not(:first-child) {
+      .threemusketeers > .wrap > *:not(:first-child) {
         padding-left: 0.5em; }
-      .threemusketeers > *:not(:last-child) {
+      .threemusketeers > .wrap > *:not(:last-child) {
         padding-right: 0.5em; } }
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */ }
