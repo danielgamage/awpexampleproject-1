@@ -6,7 +6,7 @@
 				<div class="profile">
 					<img src="img/portrait.png" alt="yes, it's Margaret!">
 					<h2>Margaret Hobbie</h2>
-					<p>Margaret is probably the nicest person you'll ever meet. You'd be missing out on a 
+					<p>Margaret is probably the nicest person you'll ever meet. You'd be missing out on a wonderful opportunity here, not hiring her. <a href="about">Read More...</a>
 				</div>
 			</div>
 		</section>
