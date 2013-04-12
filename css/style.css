@@ -509,7 +509,8 @@ body {
   text-rendering: optimizeLegibility;
   background-color: #f8f4e8;
   background-image: url("../img/bg-beige.png");
-  margin: 0; }
+  margin: 0;
+  border-top: 0.5em solid #333333; }
 
 .wrap {
   max-width: 58.75em;
@@ -542,9 +543,15 @@ a {
 #top {
   text-shadow: 0 -0.1em black;
   color: #948c83;
-  background-color: black; }
+  display: block;
+  text-align: right; }
   #top ul {
-    margin: 0; }
+    margin: 0;
+    display: inline-block;
+    padding: 0 4em 0.5em 4em;
+    -webkit-mask-box-image: url(../img/navclip.svg) 0 25% 0 25% repeat stretch;
+    background-color: black;
+    background-image: linear-gradient(to bottom, #333333, black); }
   #top li {
     display: inline-block;
     padding: 0 0.5em;
@@ -622,7 +629,8 @@ img.featured, img.map {
     padding: 1em; }
     .slider div.profile h2 {
       background-color: #4a96a1;
-      padding: 1em; }
+      padding: 1em;
+      font-family: "QuattrocentoRomanRegular", "Georgia", serif; }
     .slider div.profile img {
       display: block;
       position: relative;
