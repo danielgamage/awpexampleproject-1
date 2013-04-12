@@ -11,7 +11,6 @@
 
         <link rel="stylesheet" href="css/style.css">
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 	    	<nav id="top">
@@ -50,7 +49,7 @@
 		    		</address>
 		    	</div>
 	    	</header>
-			<nav class="menu" role="navigation">
+			<nav class="menu dropdown" role="navigation">
 				<div class="wrap">
 					<?php include "nav.php" ?> <!--because why write anything twice?!-->
 				</div>

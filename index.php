@@ -21,15 +21,21 @@
 				<section class="news">
 					<h2>News</h2>
 					<article>
-						<h3>Curabaitoireoijerjiods</h3>
+						<h3>
+							<a class="goto" href="john">Curabaitoireoijerjiods</a>
+						</h3>
 						<p>John Frusciante plays guitar by the seashore. Occasionally he sells conches.
 					</article>
 					<article>
-						<h3>Suspendisse dictum, tellus et porta</h3>
+						<h3>
+							<a class="goto" href="latin-stuff">Suspendisse dictum, tellus et porta</a>
+						</h3>
 						<p>I studied french for a while, but I have to say, this is much mrore difficult having no background in Latin.
 					</article>
+					<p><a class="goto" href="news">more news</a>
 				</section>
 				<section class="property map">
+					<h2>Property Map</h2>
 					<img class="map" src="img/map.png" alt="very pretty map of Ithaca">
 				</section>
 			</div>

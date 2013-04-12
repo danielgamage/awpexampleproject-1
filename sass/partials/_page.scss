@@ -29,7 +29,7 @@ body {
     -o-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
     background-color: $beige;
-    background-image: url('../img/bg-beige.png');
+    background-image: url('../img/bgtexture.png');
     margin: 0;
     border-top: 0.5em solid #333;
 }
@@ -43,6 +43,9 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'QuattrocentoRomanRegular', 'Georgia', serif;
 }
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -90,9 +93,9 @@ a {
 
 header {
     color: $brown;
-    font-family: 'QuattrocentoRomanRegular', 'Georgia', serif;
     text-shadow: 0 0.1em white;
     padding: 1em 0;
+    border-bottom: 1px solid #000;
     .wrap {
         display: -webkit-flex;
         -webkit-justify-content: space-between;
@@ -111,7 +114,7 @@ header {
         }
     }
     h3 {
-        font-family: 'Myriad Pro';
+        font-family: 'Georgia';
         font-weight: 400; // different styling over 500 for the baskerville amp
     }
     .flourish {
@@ -128,12 +131,13 @@ header {
         p:first-child {
             text-transform: uppercase;
             font-style: normal;
+            a {
+                color: $yellow;
+                font-size: 1.5em;
+            }
         }
         p:last-child {
             font-size: 0.8em;
-        }
-        a {
-            color: $yellow;
         }
     }    
 }
@@ -150,22 +154,39 @@ header {
             >li {
                 display: inline-block;
                 text-align: center;
-                &:not(:last-child) {
-                    &:after {
+                position: relative;
+                -webkit-flex: 1;
+                padding: 0.5em 1em;
+                &:not(:first-child) {
+                    &:before {
                         content: '\274B'; // Adobe doesn't allow Poetica as a webfont :c
                         display: inline-block;
                     }
                 }
+                .menuwrap {
+                    background-image: linear-gradient(to bottom, white, #EEE 10%, white);
+                    padding: 0 0.5em;
+                    position: absolute;
+                    top: 2em;
+                    z-index: 50;
+
+                }
                 ul {
-                    padding: 1em 2em;
-                    background-image: linear-gradient(to bottom, white, #EEE 20%, white);
                     border-left: $yellow 1px solid;
                     border-right: $yellow 1px solid;
-                    &:before {
-                        content: '';
-                        display: inline-block;
-                        height: 100%;
-                    }
+                    padding: 0.5em 2em;
+                    margin: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+        &.active {
+            li div {
+                height: 0;
+                opacity: 0;
+                &.open {
+                    height: auto;
+                    opacity: 1;
                 }
             }
         }
@@ -183,8 +204,10 @@ img.featured, img.map {
         background-color: $yellow;
         color: white;
         text-shadow: 0 -0.1em rgba(0,0,0,0.5);
-        margin-top: 5em;
+        margin: 5em 2em 2em 2em;
         padding: 1em;
+        background-image: url('../img/bgtexture.png'), linear-gradient(to bottom, lighten($yellow, 10%), $yellow);
+        
         h2 {
             background-color: $desblue;
             padding: 1em;
@@ -205,12 +228,19 @@ img.featured, img.map {
     margin: 4em 0;
 }
 
-#main {}
+.property, .news {
+    a {
+        color: $purple;
+    }
+}
+.goto:after { // "more" links
+    content: "\000BB";
+}
 
 footer {
-    background-image: linear-gradient(to bottom, darken($desblue, 10%), $desblue 10%, $desblue);
+    background-image: url('../img/bgtexture.png'), linear-gradient(to bottom, darken($desblue, 10%), $desblue 10%, $desblue);
     border-top: 1em solid $desblue;
-    padding: 4em 0;
+    padding: 3em 0 0 0;
     color: white;
     text-shadow: 0 -0.1em rgba(0,0,0,0.5);
     ul.nav {
