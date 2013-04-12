@@ -560,6 +560,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 0.5em;
     text-transform: uppercase;
     font-size: 0.75em; }
+    #top li:hover {
+      color: white; }
 
 header {
   color: #473726;
@@ -595,7 +597,7 @@ header {
     text-transform: uppercase;
     font-style: normal; }
     header address p:first-child a {
-      color: #c4902a;
+      color: #c7932d;
       font-size: 1.5em; }
   header address p:last-child {
     font-size: 0.8em; }
@@ -623,11 +625,12 @@ nav.menu ul.nav {
       padding: 0 0.5em;
       position: absolute;
       top: 2em;
-      z-index: 50; }
+      z-index: 50;
+      -webkit-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch; }
     nav.menu ul.nav > li ul {
-      border-left: #c4902a 1px solid;
-      border-right: #c4902a 1px solid;
-      padding: 0.5em 2em;
+      border-left: #c7932d 1px solid;
+      border-right: #c7932d 1px solid;
+      padding: 0.5em 2em 2em 2em;
       margin: 0;
       overflow: hidden; }
 nav.menu.active li div {
@@ -647,12 +650,12 @@ img.featured, img.map {
   position: relative; }
   .slider div.profile {
     max-width: 20em;
-    background-color: #c4902a;
+    background-color: #c7932d;
     color: white;
     text-shadow: 0 -0.1em rgba(0, 0, 0, 0.5);
     margin: 5em 2em 2em 2em;
     padding: 1em;
-    background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #d8a849, #c4902a); }
+    background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #d7aa50, #c7932d); }
     .slider div.profile h2 {
       background-color: #4a96a1;
       padding: 1em;

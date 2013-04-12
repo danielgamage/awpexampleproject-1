@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".dropdown").addClass("active");$(".item>a").hover(function(){$(this).next().addClass("open")},function(){$(this).next().removeClass("open")})});
+$(document).ready(function(){$(".dropdown").addClass("active");$(".item").hover(function(){$(this).find("div").addClass("open")},function(){$(this).find("div").removeClass("open")})});

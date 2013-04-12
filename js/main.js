@@ -1,8 +1,8 @@
 $(document).ready(function () {
 	$('.dropdown').addClass('active');
-	$('.item>a').hover(function () {
-		$(this).next().addClass('open');
+	$('.item').hover(function () {
+		$(this).find('div').addClass('open');
 	}, function() {
-		$(this).next().removeClass('open');
+		$(this).find('div').removeClass('open');
 	});
 });
