@@ -4,8 +4,28 @@
 // Modify as content requires.
 // ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 50em) {
   /* Style adjustments for viewports 480px and over go here */
+	#top {
+		margin-right: -3em;
+	}
+	header {
+		text-align: left;
+		.wrap {
+	        -webkit-flex-flow: row;
+	        -moz-flex-flow: row;
+	        flex-flow: row;
+	    }
+	}
+	nav.menu {
+	    ul.nav {
+	        -webkit-flex-flow: row;
+	        -moz-flex-flow: row;
+	        flex-flow: row;
+	    }
+	}
+
+
 	.threemusketeers>.wrap {
 	    display: -webkit-flex;
 	    -webkit-justify-content: space-between;
@@ -24,10 +44,33 @@
 	        }
 	    }
 	}
+	footer {
+		text-align: left;
+	    ul.nav, .wrap {
+	        -webkit-flex-flow: row;
+	        -moz-flex-flow: row;
+	        flex-flow: row;
+        }
+        ul.nav {
+	        max-width: 80%;
+	        -webkit-flex: 1;
+	        -moz-flex: 1;
+	        flex: 1;
+        }
+    }
+
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 60em) {
   /* Style adjustments for viewports 768px and over go here */
+	    nav.menu li.item:not(:first-child) {
+            &:before {
+                content: '\274B'; // SOOOO Adobe doesn't allow Poetica as a webfont :c
+                display: inline-block;
+                position: relative;
+                left: -2em;
+            }
+        }
 
 }
 

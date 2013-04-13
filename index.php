@@ -49,7 +49,7 @@
 				</section>
 				<section class="property map">
 					<h2>Property Map</h2>
-					<img class="map" src="img/map.png" alt="very pretty map of Ithaca">
+					<div id="map" class="map"></div>
 				</section>
 			</div>
 		</div>

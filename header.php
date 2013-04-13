@@ -6,11 +6,10 @@
         <title>Margaret Hobbie | Ithaca, NY Realtor & Historian</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/style.css">
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs3XZ7WiiFeCGdrSF8iuhZOmIAEno57nY&sensor=false"></script>
     </head>
     <body>
 	    	<nav id="top">

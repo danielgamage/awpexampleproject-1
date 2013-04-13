@@ -1,17 +1,7 @@
-
-//-----------------------------------------------
-// The following html5-boilerplate styles should
-// probably be customized for each site
-//-----------------------------------------------
 body, select, input, textarea {
   color: $font-color;
-  // Set your base font here, to apply evenly
   font-family: Georgia, serif;
 }
-
-//-----------------------------------
-// Add your own custom styles below
-//-----------------------------------
 html,
 button,
 input,
@@ -32,6 +22,7 @@ body {
     background-image: url('../img/bgtexture.png');
     margin: 0;
     border-top: 0.5em solid #333;
+    overflow-x: hidden;
 }
 .wrap {
     max-width: 62em;
@@ -80,14 +71,13 @@ h1, h2 {
     color: $grey;
     display: block;
     text-align: right;
-    margin-right: -3em;
     ul {
         margin: 0;
         display: inline-block;
         padding: 0 3em 0.5em 3em;
         -webkit-mask-box-image: url(../img/navclip.svg) 0 25% 0 25% repeat stretch;
         background-color: black;
-        background-image: linear-gradient(to bottom, #333, black);
+        background-image: linear-gradient(to bottom, #333, #232323);
         text-align: center;
     }
     li {
@@ -105,6 +95,7 @@ header {
     color: $brown;
     text-shadow: 0 0.1em white;
     padding: 1em 0;
+    text-align: center;
     .wrap {
         display: -webkit-flex;
         -webkit-justify-content: space-between;
@@ -115,6 +106,9 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        flex-flow: column;
     }
     h1 {
         margin-bottom: -0.5em;
@@ -161,6 +155,9 @@ nav.menu {
         -moz-justify-content: space-between;
         display: flex;
         justify-content: space-between;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        flex-flow: column;
         padding: 0;
         margin: 0;
     }
@@ -171,14 +168,6 @@ nav.menu {
         -webkit-flex: 1 1 1;
         padding: 0.5em 0;
         text-transform: uppercase;
-        &:not(:first-child) {
-            &:before {
-                content: '\274B'; // SOOOO Adobe doesn't allow Poetica as a webfont :c
-                display: inline-block;
-                position: relative;
-                left: -2em;
-            }
-        }
         a:hover {
             color: $yellow;
         }
@@ -210,8 +199,11 @@ nav.menu {
         }
     }
 }
-
-img.featured, img.map {
+#map {
+    width: 100%;
+    height: 20em;
+}
+img.featured, #map {
     border: 1em solid white;
     box-shadow: 0 0 1em rgba(0,0,0,0.2);
 }
@@ -223,7 +215,7 @@ nav.menu, .threemusketeers {
     border-top: 1px solid white;
 }
 .slider {
- height: 80%;
+    
 }
 .slideshow {
     background-color: #222;
@@ -358,10 +350,21 @@ ul.property {
 
 footer {
     background-image: url('../img/bgtexture.png'), linear-gradient(to bottom, darken($desblue, 10%), $desblue 10%, $desblue);
-    border-top: 1em solid $desblue;
-    padding: 3em 0 0 0;
+    padding: 0;
     color: white;
     text-shadow: 0 -0.1em rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: 1em;
+    &:before {
+        content: '';
+        display: block;
+        height: 1em;
+        background-image: url('../img/bgtexture.png');
+        background-color: $desblue;
+        margin-bottom: 2em;
+        position: relative;
+        top: -1em;
+    }
     ul.nav {
         display: -webkit-flex;
         -webkit-justify-content: space-between;
@@ -369,13 +372,11 @@ footer {
         -moz-justify-content: space-between;
         display: flex;
         justify-content: space-between;
+        -webkit-flex-flow: column;
+        -moz-flex-flow: column;
+        flex-flow: column;
         padding: 0 1em 0 0;
         margin: 0;
-        max-width: 80%;
-        -webkit-flex: 1;
-        -moz-flex: 1;
-        flex: 1;
-
         >li {
             display: block;
             text-transform: uppercase;
@@ -396,6 +397,7 @@ footer {
     .profile {
         position: relative;
         top: -1em;
+        margin: auto;
     }
     .namebanner {
         background-color: $yellow;
@@ -422,5 +424,9 @@ footer {
         -moz-justify-content: space-between;
         display: flex;
         justify-content: space-between;
+        -webkit-flex-flow: column-reverse;
+        -moz-flex-flow: column-reverse;
+        flex-flow: column-reverse;
+
     }
 }
