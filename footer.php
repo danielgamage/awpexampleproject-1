@@ -1,6 +1,16 @@
 		<footer>
 			<div class="wrap">
-				<?php include "nav.php" ?>
+                <?php include "nav.php" ?>
+                <div class="profile">
+                    <div class="innerprofile">
+                        <img src="img/portrait.png" alt="yes, it's Margaret!">
+                        <h2 class="namebanner"><span class="name">Margaret Hobbie</span></h2>
+                        <address>
+                            <a href="+16072205334">(607) 220-5334</a>
+                            <a href="mailto:mhobbie@verizon.net">mhobbie@verizon.net</a>
+                        </address>
+                    </div>
+                </div>
 			</div>
 			<div class="bottom">
 				<div class="wrap">

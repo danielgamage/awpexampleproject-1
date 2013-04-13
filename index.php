@@ -1,22 +1,35 @@
 <?php include "header.php" ?>
 
 	<main role="main">
-		<div class="wrap">
-			<section class="slider">
+		<section class="slider">
+			<div class="wrap">
 					<div class="slideshow">
 						<div class="profile">
-							<img src="img/portrait.png" alt="yes, it's Margaret!">
-							<h2 class="namebanner">Margaret Hobbie</h2>
-							<p>Margaret is probably the nicest person you'll ever meet. You'd be missing out on a wonderful opportunity here, not hiring her. <a href="about">Read More...</a>
+							<div class="innerprofile">
+								<img src="img/portrait.png" alt="yes, it's Margaret!">
+								<h2 class="namebanner"><span class="name">Margaret Hobbie</span></h2>
+								<p>Margaret is probably the nicest person you'll ever meet. You'd be missing out on a wonderful opportunity here, not hiring her. 
+									<a class="goto" href="about">Read More...</a>
+							</div>
 						</div>
 					</div>
-			</section>
-		</div>
+			</div>
+		</section>
 		<div class="threemusketeers"> <!-- Feel awful using all these div but i'm rushin :C !-->
 			<div class="wrap">
 				<section class="property featured">
 					<h2>Featured Property</h2>
-					<img class="featured" src="img/house1.jpg" alt="really really gorgeous house">
+					<article>
+						<img class="featured" src="img/house1.jpg" alt="really really gorgeous house">
+						<ul class="property">
+							<li>
+								<a class="goto" href="property/924-cliff">924 Cliff Street</a>
+								<span>$259,000</span>
+						</ul>
+					</article>
+					<p>
+						<a class="goto" href="properties">more properties</a>
+					</p>
 				</section>
 				<section class="news">
 					<h2>News</h2>
