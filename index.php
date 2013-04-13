@@ -3,7 +3,7 @@
 	<main role="main">
 		<section class="slider">
 			<div class="wrap">
-					<div class="slideshow">
+					<div class="slideshow" style="background-image: url('img/wow.jpg'); background-size: cover;">
 						<div class="profile">
 							<div class="innerprofile">
 								<img src="img/portrait.png" alt="yes, it's Margaret!">
@@ -12,8 +12,10 @@
 									<a class="goto" href="about">Read More...</a>
 							</div>
 						</div>
+
 					</div>
 			</div>
+			
 		</section>
 		<div class="threemusketeers"> <!-- Feel awful using all these div but i'm rushin :C !-->
 			<div class="wrap">

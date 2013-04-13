@@ -217,6 +217,14 @@ nav.menu, .threemusketeers {
 .slider {
     
 }
+img.slide {
+    -webkit-object-fit: cover;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index:0;
+}
 .slideshow {
     background-color: #222;
     border: 0.5em #333 solid;
@@ -259,6 +267,7 @@ nav.menu, .threemusketeers {
     color: white;
     text-shadow: 0 -0.1em rgba(0,0,0,0.5);
     padding: 0.5em;
+    z-index: 5;
     img {
         display: block;
         position: relative;

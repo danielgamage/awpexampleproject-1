@@ -49,6 +49,7 @@ function initialize() {
 			zoomControl: false,
 			streetViewControl: false,
 			mapTypeControl: false,
+			scrollwheel: false,
 			zoomControl: true,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			styles: styles
