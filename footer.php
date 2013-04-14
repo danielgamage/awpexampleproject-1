@@ -1,6 +1,5 @@
 		<footer>
 			<div class="wrap">
-                <?php include "nav.php" ?>
                 <div class="profile">
                     <div class="innerprofile">
                         <img src="img/portrait.png" alt="yes, it's Margaret!">
@@ -11,6 +10,7 @@
                         </address>
                     </div>
                 </div>
+                <?php include "nav.php" ?>
 			</div>
 			<div class="bottom">
 				<div class="wrap">

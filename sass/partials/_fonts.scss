@@ -12,5 +12,13 @@
          url('../fonts/Quattrocento-Regular-webfont.svg#QuattrocentoRomanRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-    
+}
+@font-face {
+    font-family: 'symbols';
+    src: url('../fonts/symbols-regular.eot');
+    src: url('../fonts/symbols-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/symbols-regular.woff') format('woff'),
+         url('../fonts/symbols-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

@@ -15,10 +15,10 @@
 	    	<nav id="top">
 		    	<div class="wrap"> <!-- ugh wrappers WHY !-->
 		    		<ul>
-		    			<a href="facebook">
+		    			<a class="icon" href="facebook">
 		    				<li>Facebook</li>
 		    			</a>
-		    			<a href="twitter">
+		    			<a class="icon" href="twitter">
 		    				<li>Twitter</li>
 		    			</a>
 		    			<a href="realty_usa">

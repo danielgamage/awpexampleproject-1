@@ -78,6 +78,7 @@ h1, h2 {
         -webkit-mask-box-image: url(../img/navclip.svg) 0 25% 0 25% repeat stretch;
         background-color: black;
         background-image: linear-gradient(to bottom, #333, #232323);
+        background-image: -webkit-linear-gradient(#333, #232323);
         text-align: center;
     }
     li {
@@ -89,6 +90,9 @@ h1, h2 {
             color: white;
         }
     }
+}
+.icon {
+    font-family: 'symbols';
 }
 
 header {
@@ -174,6 +178,7 @@ nav.menu {
         .menuwrap {
             text-transform: none;
             background-image: linear-gradient(to bottom, white, #EEE 10%, white);
+            background-image: -webkit-linear-gradient(to bottom, white, #EEE 10%, white);
             padding: 0 0.5em;
             position: absolute;
             top: 2em;
@@ -359,6 +364,7 @@ ul.property {
 
 footer {
     background-image: url('../img/bgtexture.png'), linear-gradient(to bottom, darken($desblue, 10%), $desblue 10%, $desblue);
+    background-image: url('../img/bgtexture.png'), -webkit-linear-gradient(darken($desblue, 10%), $desblue 10%, $desblue);
     padding: 0;
     color: white;
     text-shadow: 0 -0.1em rgba(0,0,0,0.5);
