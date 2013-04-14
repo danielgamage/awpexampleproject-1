@@ -47,9 +47,9 @@
 	footer {
 		text-align: left;
 	    ul.nav, .wrap {
-	        -webkit-flex-flow: row;
-	        -moz-flex-flow: row;
-	        flex-flow: row;
+	        -webkit-flex-flow: row-reverse;
+	        -moz-flex-flow: row-reverse;
+	        flex-flow: row-reverse;
         }
         ul.nav {
 	        max-width: 80%;

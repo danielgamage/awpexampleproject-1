@@ -488,6 +488,13 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'symbols';
+  src: url("../fonts/symbols-regular.eot");
+  src: url("../fonts/symbols-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/symbols-regular.woff") format("woff"), url("../fonts/symbols-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 body, select, input, textarea {
   color: #222222;
   font-family: Georgia, serif; }
@@ -561,6 +568,7 @@ h1, h2 {
     -webkit-mask-box-image: url(../img/navclip.svg) 0 25% 0 25% repeat stretch;
     background-color: black;
     background-image: linear-gradient(to bottom, #333333, #232323);
+    background-image: -webkit-linear-gradient(#333333, #232323);
     text-align: center; }
   #top li {
     display: inline-block;
@@ -569,6 +577,9 @@ h1, h2 {
     font-size: 0.75em; }
     #top li:hover {
       color: white; }
+
+.icon {
+  font-family: 'symbols'; }
 
 header {
   color: #473726;
@@ -640,6 +651,7 @@ nav.menu {
     nav.menu li.item .menuwrap {
       text-transform: none;
       background-image: linear-gradient(to bottom, white, #eeeeee 10%, white);
+      background-image: -webkit-linear-gradient(to bottom, white, #eeeeee 10%, white);
       padding: 0 0.5em;
       position: absolute;
       top: 2em;
@@ -794,6 +806,7 @@ ul.property {
 
 footer {
   background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #3a757e, #4a96a1 10%, #4a96a1);
+  background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(#3a757e, #4a96a1 10%, #4a96a1);
   padding: 0;
   color: white;
   text-shadow: 0 -0.1em rgba(0, 0, 0, 0.5);
@@ -856,9 +869,9 @@ footer {
     -moz-justify-content: space-between;
     display: flex;
     justify-content: space-between;
-    -webkit-flex-flow: column-reverse;
-    -moz-flex-flow: column-reverse;
-    flex-flow: column-reverse; }
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    flex-flow: column; }
 
 @media only screen and (min-width: 50em) {
   /* Style adjustments for viewports 480px and over go here */
@@ -895,9 +908,9 @@ footer {
   footer {
     text-align: left; }
     footer ul.nav, footer .wrap {
-      -webkit-flex-flow: row;
-      -moz-flex-flow: row;
-      flex-flow: row; }
+      -webkit-flex-flow: row-reverse;
+      -moz-flex-flow: row-reverse;
+      flex-flow: row-reverse; }
     footer ul.nav {
       max-width: 80%;
       -webkit-flex: 1;
