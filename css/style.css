@@ -568,7 +568,7 @@ h1, h2 {
     -webkit-mask-box-image: url(../img/navclip.svg) 0 25% 0 25% repeat stretch;
     background-color: black;
     background-image: linear-gradient(to bottom, #333333, #232323);
-    background-image: -webkit-linear-gradient(#333333, #232323);
+    background-image: -webkit-linear-gradient(top, #333333, #232323);
     text-align: center; }
   #top li {
     display: inline-block;
@@ -650,13 +650,17 @@ nav.menu {
       color: #da9a00; }
     nav.menu li.item .menuwrap {
       text-transform: none;
+      background-color: white;
       background-image: linear-gradient(to bottom, white, #eeeeee 10%, white);
-      background-image: -webkit-linear-gradient(to bottom, white, #eeeeee 10%, white);
+      background-image: -webkit-linear-gradient(top, white, #eeeeee 10%, white);
       padding: 0 0.5em;
       position: absolute;
       top: 2em;
       z-index: 500;
-      -webkit-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch; }
+      -webkit-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
+      -moz-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
+      -ms-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
+      mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch; }
     nav.menu li.item ul {
       border-left: #da9a00 1px solid;
       border-right: #da9a00 1px solid;
@@ -679,7 +683,9 @@ img.featured, #map {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2); }
 
 header, .slider, .threemusketeers {
+  background-color: #f8f4e8;
   background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #f8f4e8, #e7e2d0);
+  background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(top, #f8f4e8, #e7e2d0);
   border-bottom: 1px solid #948c83; }
 
 nav.menu, .threemusketeers {
@@ -699,7 +705,8 @@ img.slide {
   .slideshow .profile {
     margin: 5em 2em 2em 2em;
     background-color: #da9a00;
-    background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #da9a00, #ca8400); }
+    background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #da9a00, #ca8400);
+    background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(top, #da9a00, #ca8400); }
     .slideshow .profile a {
       color: #ffc964; }
   .slideshow .innerprofile {
@@ -746,7 +753,7 @@ img.slide {
   text-align: center;
   padding: 0.2em;
   margin: auto;
-  -webkit-filter: drop-shadow(0 0.2em 0.5em rgba(0, 0, 0, 0.4)); }
+  -webkit-filter: drop-shadow(0 0.2em 0.5em rgba(0, 0, 0, 0.3)); }
 
 .namebanner:before, .namebanner:after {
   content: "";
@@ -805,6 +812,7 @@ ul.property {
   content: "\000BB"; }
 
 footer {
+  background-color: #4a96a1;
   background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #3a757e, #4a96a1 10%, #4a96a1);
   background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(#3a757e, #4a96a1 10%, #4a96a1);
   padding: 0;
@@ -884,6 +892,8 @@ footer {
       -webkit-flex-flow: row;
       -moz-flex-flow: row;
       flex-flow: row; }
+      header .wrap > * {
+        display: inline-block; }
 
   nav.menu ul.nav {
     -webkit-flex-flow: row;
@@ -898,7 +908,8 @@ footer {
     display: flex;
     justify-content: space-between; }
     .threemusketeers > .wrap > * {
-      display: block;
+      display: inline-block;
+      vertical-align: top;
       width: 33%; }
       .threemusketeers > .wrap > *:not(:first-child) {
         padding-left: 0.5em; }
@@ -911,6 +922,13 @@ footer {
       -webkit-flex-flow: row-reverse;
       -moz-flex-flow: row-reverse;
       flex-flow: row-reverse; }
+      footer ul.nav li, footer .wrap li {
+        display: inline-block; }
+    footer .wrap > div, footer .wrap > ul {
+      display: inline-block;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: inline-flex; }
     footer ul.nav {
       max-width: 80%;
       -webkit-flex: 1;
