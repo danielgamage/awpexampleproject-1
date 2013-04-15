@@ -169,7 +169,9 @@ nav.menu {
         display: inline-block;
         text-align: center;
         position: relative;
-        -webkit-flex: 1 1 1;
+        -webkit-flex: 1 1 auto;
+        -moz-flex: 1 1 auto;
+        flex: 1 1 auto;
         padding: 0.5em 0;
         text-transform: uppercase;
         a:hover {
@@ -184,6 +186,7 @@ nav.menu {
             position: absolute;
             top: 2em;
             z-index: 500;
+            width: 100%;
             -webkit-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
             -moz-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
             -ms-mask-box-image: url(../img/listclip.svg) 0 25% 0 25% stretch stretch;
