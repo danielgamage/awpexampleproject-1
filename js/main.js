@@ -41,33 +41,6 @@ var styles = [
   }
 ];
 
-/*function initialize() {
-	var latLng = new google.maps.LatLng(42.43900,-76.493000),
-		mapOptions = {
-				center: latLng,
-				zoom: 15,
-				panControl: false,
-				zoomControl: false,
-				streetViewControl: false,
-				mapTypeControl: false,
-				scrollwheel: false,
-				zoomControl: true,
-				mapTypeId: google.maps.MapTypeId.ROADMAP,
-				styles: styles
-			},
-
-		map = new google.maps.Map(document.getElementById("map"), mapOptions),
-
-		overlay = new CustomMarker(map.getCenter(), map);
-
-	var image = 'img/mapcon1.png';
-	var myLatLng = new google.maps.LatLng(42.43999,-76.493099);
-	var beachMarker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		icon: image
-	});
-}*/
 function initialize() {
 	var latLng = new google.maps.LatLng(42.43990,-76.493900),
 		mapOptions = {
