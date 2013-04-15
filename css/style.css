@@ -814,7 +814,7 @@ ul.property {
 footer {
   background-color: #4a96a1;
   background-image: url("../img/bgtexture.png"), linear-gradient(to bottom, #3a757e, #4a96a1 10%, #4a96a1);
-  background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(#3a757e, #4a96a1 10%, #4a96a1);
+  background-image: url("../img/bgtexture.png"), -webkit-linear-gradient(top, #3a757e, #4a96a1 10%, #4a96a1);
   padding: 0;
   color: white;
   text-shadow: 0 -0.1em rgba(0, 0, 0, 0.5);
